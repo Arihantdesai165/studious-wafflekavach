@@ -2,11 +2,8 @@
 # https://developers.cloudflare.com/pages/platform/build-configuration/
 
 name = "studious-wafflekavach"
+pages_build_output_dir = "dist"
 compatibility_date = "2026-04-02"
-
-[build]
-command = "npm run build"
-path = "dist"
 
 [vars]
 BUN_VERSION = "0"
