@@ -1,0 +1,14 @@
+# Cloudflare Pages Build Configuration
+# https://developers.cloudflare.com/pages/platform/build-configuration/
+
+name = "studious-wafflekavach"
+compatibility_date = "2026-04-02"
+
+[build]
+command = "npm run build"
+path = "dist"
+
+[vars]
+BUN_VERSION = "0"
+NODE_VERSION = "22"
+NPM_FLAGS = "--no-frozen-lockfile"
