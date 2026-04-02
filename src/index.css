@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+
+    --primary: 173 83% 34%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 220 25% 10%;
+
+    --muted: 220 14% 92%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 28 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 45 100% 51%;
+    --warning-foreground: 30 50% 12%;
+
+    --safe: 160 84% 39%;
+    --safe-foreground: 0 0% 100%;
+
+    --danger: 0 84% 60%;
+    --danger-foreground: 0 0% 100%;
+
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 173 83% 34%;
+
+    --radius: 1rem;
+
+    --gradient-hero: linear-gradient(135deg, hsl(173 83% 34%), hsl(190 80% 42%));
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Noto Sans Kannada', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .rural-btn {
+    @apply min-h-[72px] rounded-2xl text-xl font-bold flex flex-col items-center justify-center gap-2 transition-all duration-200 shadow-sm;
+  }
+
+  .rural-btn:active {
+    transform: scale(0.97);
+  }
+
+  .gradient-primary {
+    background: var(--gradient-hero);
+  }
+
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50 shadow-sm rounded-3xl;
+  }
+  
+  .input-field {
+    @apply h-16 rounded-2xl border-2 border-border bg-card px-5 text-2xl font-bold text-foreground
+      focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20
+      transition-all duration-200;
+  }
+}

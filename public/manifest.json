@@ -1,0 +1,22 @@
+{
+  "name": "ರಕ್ಷಾಕವಚ - Rakshakavach",
+  "short_name": "ರಕ್ಷಾಕವಚ",
+  "description": "ಸುರಕ್ಷಿತ ಹಣ ವರ್ಗಾವಣೆ - Secure Money Transfer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f0e8",
+  "theme_color": "#1a8a4a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
